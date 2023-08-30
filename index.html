@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <div class="mt-4">
+      <div class="bg-orange-500 text-center mx-10 p-10">
+        <div class="flex justify-center mt-5">
+          <img
+            class="bg-white"
+            src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+            alt="kodluyoruz.org"
+          />
+        </div>
+        <h2 class="text-white mt-4 text-lg">Yapılacaklar Listesi</h2>
+        <div class="mt-4">
+          <input
+            class="w-3/4 float-left text-base"
+            type="text"
+            id="toDoInput"
+            placeholder="Bugün Ne Yapacaksın?"
+          />
+          <span
+            class="bg-gray-400 text-white text-center p-2.5 w-1/4 float-left text-base"
+            id="toDoInputBtn"
+            >Ekle</span
+          >
+        </div>
+      </div>
+      <div class="mx-10" id="toDoListDiv">
+        <ul class="list-none" id="toDoList">
+          <!-- <li class="bg-gray-100" id="toDo">Oğuzhan</li>
+          <li class="bg-gray-200">id</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="/toDoList.js"></script>
+  </body>
+</html>
